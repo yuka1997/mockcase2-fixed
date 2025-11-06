@@ -41,23 +41,21 @@ php artisan db:seed
 
 - name:一般ユーザー
 
-- email:user@example.com
+  email:user@example.com
 
-- password:user123
-
+  password:user123
 
 - name:一般ユーザー 2
 
-- email:user2@example.com
+  email:user2@example.com
 
-- password:user123
-
+  password:user123
 
 - name:管理者
 
-- email:admin@example.com
+  email:admin@example.com
 
-- password:admin123
+  password:admin123
 
 ## ER 図
 
