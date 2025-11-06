@@ -8,8 +8,8 @@
 
 ```bash
 git clone git@github.com:coachtech-material/laravel-docker-template.git
-mv laravel-docker-template mockcase2
-cd mockcase2
+mv laravel-docker-template mockcase2_fixed
+cd mockcase2_fixed
 ```
 
 ２．Docker 起動
@@ -37,7 +37,8 @@ php artisan db:seed
 - Nginx 1.21.1
 - Docker / Docker Compose
 
-## ER図
+## ER 図
+
 ![ER図](mockcase2.drawio.png)
 
 ## URL
