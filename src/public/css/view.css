@@ -1,0 +1,198 @@
+.attendance-list__content {
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.attendance-list__heading {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.heading-bar {
+    display: block;
+    width: 8px;
+    height: 40px;
+    background-color: #000000;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.attendance-list__month-nav,
+.attendance-list__day-nav {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 14px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.month-nav__button,
+.day-nav__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: #737373;
+    font-weight: 700;
+}
+
+.month-nav__arrow,
+.day-nav__arrow {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+    opacity: 0.3;
+}
+
+.month-nav__button:last-child .month-nav__arrow,
+.day-nav__button:last-child .day-nav__arrow {
+    transform: rotate(180deg);
+}
+
+.month-nav__calendar,
+.day-nav__calendar {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.month-nav__current,
+.day-nav__current {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.month-nav__now,
+.day-nav__now {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+
+.attendance-list__table-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.attendance-list__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 700;
+    font-size: 16px;
+    color: #737373;
+    table-layout: fixed;
+    overflow: hidden;
+}
+
+.attendance-list__table th,
+.attendance-list__table td {
+    padding: 12px 8px;
+    border-bottom: 2px solid #E1E1E1;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.attendance-list__detail-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.csv-export {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.csv-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .attendance-list__content {
+        max-width: 1400px;
+        padding: 0 40px;
+    }
+
+    .attendance-list__heading {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .attendance-list__month-nav {
+        padding: 10px 20px;
+        gap: 30px;
+    }
+
+    .month-nav__button,
+    .day-nav__button {
+        font-size: 18px;
+        padding: 8px 18px;
+        gap: 10px;
+    }
+
+    .month-nav__arrow,
+    .day-nav__arrow {
+        width: 24px;
+        height: 18px;
+    }
+
+    .month-nav__calendar,
+    .day-nav__calendar {
+        width: 28px;
+        height: 28px;
+    }
+
+    .month-nav__now,
+    .day-nav__now {
+        font-size: 22px;
+    }
+
+    .attendance-list__table {
+        font-size: 18px;
+    }
+
+    .attendance-list__table th,
+    .attendance-list__table td {
+        padding: 16px 12px;
+    }
+
+    .attendance-list__detail-link {
+        font-size: 18px;
+    }
+
+    .csv-export {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .csv-button {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #000000;
+        color: #FFFFFF;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 22px;
+    }
+}
