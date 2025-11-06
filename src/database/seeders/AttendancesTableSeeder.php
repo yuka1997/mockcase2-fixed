@@ -29,7 +29,11 @@ class AttendancesTableSeeder extends Seeder
             }
 
             for ($i = 1; $i <= 7; $i++) {
-                $this->createAttendanceWithBreak($user->id, $today->copy()->day($i));
+                $date = $today->copy()->day($i);
+                if ($date->isToday()) {
+                    continue;
+                }
+                $this->createAttendanceWithBreak($user->id, $date);
             }
 
             for ($i = 1; $i <= 3; $i++) {
